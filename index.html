@@ -18,13 +18,13 @@
     <p>Names are based on gender and the date you were born.</p>
     <p></p>
     <h2>Fill Your Details Here</h2>
-    
+    <div class="form">
         <label for="Gender">Gender</label>
         <input type="text" id="male" id="female" name="Gender">
-        <button type="button" class="btn-primary" onclick="findGender(male,female)">Get gender</button>
+        <button type="button" class="btn-primary" onclick="findGender(male,female);">Get gender</button>
     <br>
     <br>
-        <labelfor="number">Year of Birth:</labelfor>
+        <labelfor="Year">Year of Birth:</labelfor>
         <input type="number" id="year" placeholder="Birth Year e.g 1999 if born 1999" name="year">
         <br>
         <br>
@@ -35,6 +35,10 @@
         <br>
             <label for="Date">Date of Birth</label>
             <input type="number" id="Date" placeholder="Birth date e.g 01" name="Date">
+            <br>
+            <br>
+            <p id="results"></p>
+        </div>
          
    
  <link rel="stylesheet" href="./script.js">   
