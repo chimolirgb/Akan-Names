@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan-Names</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="container" style="background-color: rgb(53, 9, 73); text-align: center; color: white;">
@@ -22,11 +21,14 @@
     <h2>Fill Your Details Here</h2>
     <div class="card p2" style="background-color: rgb(16, 141, 135); color: rgb(7, 6, 6) ;">
     <div class="form">
-        <label for="Gender">Gender:</label>
-        <input type="text" id="male"name="Gender">
-        <label for="Gender">Gender</label>
-        <input type="text" id="female" name="Gender">
-        <button type="submit" class="btn-primary" onclick="findName();">Get Name</button>
+        <label for="Month">Gender:</label>
+        <input type="radio" id="male"name="Gender" class="form-check-input">Male
+        <!-- <label for="Gender">Gender</label> -->
+        <input type="radio" id="female" name="Gender" class="form-check=input">Female
+        <br>
+        <br>
+       
+        <!-- <input type="button" value="submit" onclick="calDayValue()">  -->
     <br>
    
     <br>
@@ -43,10 +45,10 @@
             <input type="number" id="Date" placeholder="Birth date e.g 01" name="Date">
             <br>
             <br>
+            <button type="button" class="btn-primary" onclick = "calculateDayValue()">Get Name</button>
             <p id="results"></p>
         </div>
         </div>
-  
-    <link rel="stylesheet" href="./script.js">   
+        <script src="js/script1.js"></script>
     </body>
     </html>
