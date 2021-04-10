@@ -1,10 +1,12 @@
-# Akan-Names
+# Project Name
+Akan-Names
 # Author
-# Lucy Chimoli
+ Lucy Chimoli
 
 # Description
 This web takes a user's birthday and calculates the day of the week 
 they were born and later gives it an Akan name(Used by Ghanians) based on their gender.
+
 # Prerequisites
 You need to have git installed
 You can install it with the following command in your terminal
@@ -19,7 +21,8 @@ https://github.com/chimolirgb/Akan-Names
 
 # Technologies Used
 1. HTML
-2. Css
+2. bootstrap
+3. JAVASCRIPT
 3. Git
 
 # Live Site
