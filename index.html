@@ -21,31 +21,25 @@
     <h2>Fill Your Details Here</h2>
     <div class="card p2" style="background-color: rgb(16, 141, 135); color: rgb(7, 6, 6) ;">
     <div class="form">
-        <label for="Month">Gender:</label>
-        <input type="radio" id="male"name="Gender" class="form-check-input">Male
-        <!-- <label for="Gender">Gender</label> -->
-        <input type="radio" id="female" name="Gender" class="form-check=input">Female
+        <label for="Gender">Gender:</label>
+        <input type="radio" id="male"name="gender" class="form-check-input" value="Male">Male
+        <input type="radio" id="female" name="gender" class="form-check=input" value="Female">Female
         <br>
-        <br>
-       
-        <!-- <input type="button" value="submit" onclick="calDayValue()">  -->
-    <br>
-   
     <br>
         <label for="number">Year of Birth:</label>
         <input type="number" id="year" placeholder="Birth Year e.g 1999 if born 1999" name="year">
         <br>
         <br>
-            <label for="month">month of Birth:</label>
+            <label for="number">month of Birth:</label>
             <input type="number" id="month" placeholder="month of Birth e.g 5 for may"
              name="month">
         <br>
         <br>
             <label for="Date">Date of Birth</label>
-            <input type="number" id="Date" placeholder="Birth date e.g 01" name="Date">
+            <input type="number" id="date" placeholder="Birth date e.g 01" name="Date">
             <br>
             <br>
-            <button type="button" class="btn-primary" onclick = "calculateDayValue()">Get Name</button>
+            <button type="submit" class="btn-primary" onclick = "findName()">Get Name</button>
             <p id="results"></p>
         </div>
         </div>

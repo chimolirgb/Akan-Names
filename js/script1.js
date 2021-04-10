@@ -1,4 +1,4 @@
-var CC, YY, MM, DD, d, dayValue;    
+var CC, YY, MM, DD, d, dayValue, gender;    
 
 // Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
 
@@ -17,64 +17,27 @@ function calculateDayValue(){
     console.log(d);
     return(Math.floor(d));
 }
-function getGender(){
-    let gender = document.getElementsByName("gender");
-    if (genders[0].checked == true){
-        var gender = "male";
+function getAkanName(dayValue){
+    let genderRadio = document.getElementsByName("gender");
+    console.log(genderRadio)
+
+    for (i = 0; i < genderRadio.length; i++){
+        if (genderRadio[i].checked)
+        gender = genderRadio[i].value;
     }
-    else if(genders[1].checked == true){
-        var gender = "female"; 
-    }
-    else{
-        return false;
-    }
-    switch(gender){
-        case "male":
-            if (dayValue == 1){
-                alert ("You were born on" + dayNames[0] + "and Your akan name is" + maleNames[0] + "!");
-            }
-            else if (dayValue == 2){
-                alert("You were born on" + dayNames [1] +"and Your akan name is" + maleNames[1] +"!");
-            }
-            else if (dayValue == 3){
-                alert ("You were born on" + dayNames[2] + "and Your akan name is" + maleNames[2] + "!")
-            }
-            else if (dayValue ==4){ 
-                alert("You were born on" + dayNames[3] + "and Your akan name is" + maleNames[3] + "!");
-            }
-            else if (dayValue == 5){
-                alert("You were born on" + dayNames[4] +"and Your akan name is" + maleNames[4] + "!");
-            }
-            else if (dayValue == 6){
-                alert("You were born on" +dayNames[5] + "and Your akan name is" + maleNames[5] + "!");
-            }
-            else if (dayValue == 7){
-                alert("You were born on" + dayNames[6] + "and Your akan name is" + maleNames[6] + "!");
-            }
-        }
-    }
+   console.log(gender);
+
+    switch( gender){
+        case "Male":
+          alert("You were born on" + dayNames[dayValue] + "and you are" + gender + ". so your Akan name is" + maleNames[dayValue] + "!"); 
+          
     break;
-      "female";
-        if (dayValue == 1){
-            alert("You were born on" + dayNames[0] + "and Your akan name is" + femaleNames[0] + "!");
-        }
-        else if (dayValue ==2){
-        alert("You were born on" + dayNames[1] + "and Your akan name is" + femaleNames[1]+ "!");
-        }
-         else if (dayValue == 3){
-    alert("You were born on" + dayNames[2] + "and Your akan name is" + femaleNames[2] + "!");
+      case "Female":
+        alert("You were born on" + dayNames[dayValue] + "and you are" + gender + ". so your Akan name is" + femaleNames[dayValue] + "!");      
+break;
+    }
 }
-else if(dayValue ==4){
-    alert("You were born on" + dayNames[3]+ "and Your akan name is" +femaleNames[3] + "!");
-}
-else if (dayValue ==5){
-    alert("You were born on" + dayNames[4] + "and Your akan name is" + femaleNames[4] + "!");
-}
-else if (dayValue == 6){
-    alert("You were born on" + dayNames[5]+ "and Your akan name is" + femaleNames[5] + "!");
-}
-break
-function findName(){
+    function findName() {
   dayValue = calculateDayValue();
-  getGender();
+  getAkanName(dayValue);
 }
