@@ -2,9 +2,9 @@ var CC, YY, MM, DD, modulus, modulusValue;
 
 // Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
 
-let dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sartuday"];
-let maleNames = [" Kwasi", "Kwadwo", "Kwabena", "Kwaku", " Yaw", "Kofi", "Kwame"];
-let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
+var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sartuday"];
+var maleNames = [" Kwasi", "Kwadwo", "Kwabena", "Kwaku", " Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
 
 function calculateDayValue(){
     year = document.getElementById("year").value;
@@ -54,7 +54,26 @@ function getGender(){
         }
     }
     break;
-    case "female":
+      "female";
         if (dayValue == 1){
-            alert("You were born on" + dayNames[0] + "and Your akan name is")
+            alert("You were born on" + dayNames[0] + "and Your akan name is" + femaleNames[0] + "!");
         }
+        else if (dayValue ==2){
+        alert("You were born on" + dayNames[1] + "and Your akan name is" + femaleNames[1]+ "!");
+        }
+         else if (dayValue == 3){
+    alert("You were born on" + dayNames[2] + "and Your akan name is" + femaleNames[2] + "!");
+}
+else if(dayValue ==4){
+    alert("You were born on" + dayNames[3]+ "and Your akan name is" +femaleNames[3] + "!");
+}
+else if (dayValue ==5){
+    alert("You were born on" + dayNames[4] + "and Your akan name is" + femaleNames[4] + "!");
+}
+else if (dayValue == 6){
+    alert("You were born on" + dayNames[5]+ "and Your akan name is" + femaleNames[5] + "!");
+}
+function findName(){
+  dayValue = calculateDayValue();
+  getGender();
+}

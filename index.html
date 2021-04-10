@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="background-color: rgb(53, 9, 73); text-align: center; color: white;">
     <h2>Welcome</h2>
-    <div class="card p1 text-center">
+    <div class="card p1 text-center" style="background-color: rgb(37, 158, 154); color: rgb(10, 9, 9);;">
     <p>This web takes a user's birthday and calculates the day of the week 
         they were born</p> 
      <p>Similarly it outputs their Akan Name.</p>
@@ -20,14 +20,17 @@
    </div>
     <br>
     <h2>Fill Your Details Here</h2>
-    <div class="card p2">
+    <div class="card p2" style="background-color: rgb(16, 141, 135); color: rgb(7, 6, 6) ;">
     <div class="form">
+        <label for="Gender">Gender:</label>
+        <input type="text" id="male"name="Gender">
         <label for="Gender">Gender</label>
-        <input type="text" id="male" id="female" name="Gender">
-        <button type="button" class="btn-primary" onclick="findGender(male,female);">Get gender</button>
+        <input type="text" id="female" name="Gender">
+        <button type="submit" class="btn-primary" onclick="findName();">Get Name</button>
     <br>
+   
     <br>
-        <labelfor="Year">Year of Birth:</labelfor>
+        <label for="number">Year of Birth:</label>
         <input type="number" id="year" placeholder="Birth Year e.g 1999 if born 1999" name="year">
         <br>
         <br>
