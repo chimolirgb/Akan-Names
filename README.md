@@ -26,7 +26,7 @@ https://github.com/chimolirgb/Akan-Names
 3. Git
 
 # Live Site
-https://github.com/chimolirgb/Landing_page_portfolio.git
+https://chimolirgb.github.io/Akan-Names/
 
 # Licence
 The project is under the [MIT](LICENSE) license
