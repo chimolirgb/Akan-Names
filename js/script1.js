@@ -6,6 +6,21 @@ var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 var maleNames = [" Kwasi", "Kwadwo", "Kwabena", "Kwaku", " Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
 
+function validate(){
+  if (document.myForm.month.value == ""|| isNan(document.myForm.value)|| 
+  document.myForm.month.value.length !=2||document.myForm.month.value >12||
+   document.myForm.month.value<=0){
+  alert("Please provide a valid birth month i.e 5");
+  document.myForm.month.focus();
+  return false;
+} 
+else if (document.myForm.date.value == ""|| isNaN (document.myForm.month.value)||
+document.myForm.month.value.length !=2||document.myForm.date.value>31||document.myForm.date.value <= 0){
+  alert("Please provide a valid date i.e 08");
+  document.myForm.focus();
+  return false;
+}
+
 function calculateDayValue(){
  let year = document.getElementById("year").value;
  console.log(year);
@@ -40,4 +55,5 @@ break;
     function findName() {
   dayValue = calculateDayValue();
   getAkanName(dayValue);
-}
+    }
+  }
