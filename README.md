@@ -25,6 +25,27 @@ https://github.com/chimolirgb/Akan-Names
 3. JAVASCRIPT
 3. Git
 
+#BDD
+Enter century of birth eg 19 for 1999,
+     Input Example 19
+     Output example 19
+
+* Enter year of Birth eg 99 for 1999
+     Input Example 99
+     Output Example 99
+
+* Enter month of birth eg 5 for May 
+    Input example 5
+    Output example 5
+
+* Enter Date of the month you were born in eg 05
+    input example 05
+    output example 05
+
+* Select gender 
+    Input example male
+    output male
+
 # Live Site
 https://chimolirgb.github.io/Akan-Names/
 
