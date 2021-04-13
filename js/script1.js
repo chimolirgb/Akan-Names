@@ -6,12 +6,13 @@ var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 var maleNames = [" Kwasi", "Kwadwo", "Kwabena", "Kwaku", " Yaw", "Kofi", "Kwame"];
 var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]; 
 
-function validateDaysInMonth(days, month){
-    if (days <= 0 || days > 31);
-    alert("please provide a valid day in month")
-    validateDaysInMonth();
-    return false;
-}
+if (DD <= 0 || DD > 31){
+  alert("Enter a valid one");
+}else if(MM <=0 || MM > 12){
+  alert("enter a valid month");
+}else{
+alert("confirm inputs");
+};
 
 function calculateDayValue(){
  let year = document.getElementById("year").value;
